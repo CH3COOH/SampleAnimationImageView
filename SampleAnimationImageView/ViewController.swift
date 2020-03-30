@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let option1: UIView.AnimationOptions = .curveEaseIn
         UIView.animate(withDuration: 0.4, delay: 0, options: [ option1 ], animations: { [weak self] in
             self?.imageView1.alpha = 0
-            self?.imageView1.transform = CGAffineTransform.init(translationX: 0, y: 200)
+            self?.imageView1.transform = .init(translationX: 0, y: 200)
         }, completion: { [weak self] (_) in
             self?.imageView1.isHidden = true
         })
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         let option2: UIView.AnimationOptions = .curveEaseIn
         UIView.animate(withDuration: 0.4, delay: 0, options: [ option2 ], animations: { [weak self] in
             self?.imageView2.alpha = 0
-            self?.imageView2.transform = CGAffineTransform.init(translationX: 0, y: -200)
+            self?.imageView2.transform = .init(translationX: 0, y: -200)
         }, completion: { [weak self] (_) in
             self?.imageView2.isHidden = true
         })
